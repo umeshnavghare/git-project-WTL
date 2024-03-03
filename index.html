@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web To Lead Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
@@ -19,6 +20,11 @@
         type="hidden"
         name="retURL"
         value="https://umeshnavghare.github.io/git-project-WTL/index.html"
+      />
+      <input
+        type="hidden"
+        name="captcha_settings"
+        value='{"keyname":"WebToLead","fallback":"true","orgId":"00D5g00000I0e70","ts":""}'
       />
       <input type="hidden" name="Lead_Date__c" class="outputDate" />
 
@@ -69,6 +75,11 @@
           size="12"
           type="text" /></span
       ><br /> -->
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LflCogpAAAAAJFK4oi_2Wd2-9FXLNwJwnd_xY6o"
+      ></div>
+      <br />
 
       <input class="submit" type="submit" name="submit" class="inputDate" />
     </form>
