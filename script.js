@@ -1,12 +1,13 @@
 let captchachecked = false;
-function beforeSubmit(event) {
+function beforesubmit(event) {
   if (captchachecked) {
-    let outputDate = document.querySelector(".outputDate");
-    let inputDate = document.querySelector(".inputDate");
-    console.log("inputDate.value", inputDate.value); //string --> date(en_IN)
+    let outputdate = document.querySelector(".outputdate");
+    let inputdate = document.querySelector(".inputdate");
+    console.log("inputdate.value", inputdate.value); //string --> date(en_IN)
+    //to convert string date to date format.
 
-    let formattedDate = new Date(inputDate.value).toLocaleDateString("en-US");
-    outputDate.value = formattedDate;
+    let formattedDate = new Date(inputdate.value).toLocaleDateString("en-US");
+    outputdate.value = formattedDate;
   } else {
     alert("please check the recaptcha box to submit the lead");
     event.preventDefault();
