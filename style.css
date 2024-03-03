@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input,
+  label {
+    display: block;
+  }
+  label {
+    color: rgb(70, 30, 33);
+  }
+  input {
+    width: 100%;
+    
+  }
+  .submit {
+    margin: 15px auto 0 auto;
+  background-color: rgb(96, 96, 165);
+    width: 40%;
+    border-radius: 5Px;
+  }
+  
+  form{
+      min-width: 300px;
+      max-width: 500px;
+       margin: auto;
+       border: 2px solid rgb(54, 10, 54);
+       padding: 15px;
+  }
+  
+  
+  
+  /*
+  margin top , right, botom, left
+  margin 25px, 50px, 75px, 100px
+  margin 25px auto  
